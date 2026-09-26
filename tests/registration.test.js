@@ -1,7 +1,7 @@
 import {test, expect} from '@playwright/test';
 import {Registration} from "../pages/Registration";
 
-test("Register a user", async ({page})=>{
+test("Register a user account.", async ({page})=>{
 
     const pages = new Registration(page);
 
