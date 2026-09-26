@@ -1,0 +1,22 @@
+{
+  "name": "demo_web_shop_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humayrasiddika22/Demo_Web_Shop_Automation.git"
+  },
+  "keywords": [],
+  "author": "Humayra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/humayrasiddika22/Demo_Web_Shop_Automation/issues"
+  },
+  "homepage": "https://github.com/humayrasiddika22/Demo_Web_Shop_Automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3"
+  }
+}
