@@ -1,4 +1,4 @@
-class Index{
+class Base{
     constructor(page){
         this.page = page;
         this.pageURL = "https://demowebshop.tricentis.com/"
@@ -14,9 +14,9 @@ class Index{
     }
 
 // Page close
-    async pageClose(url){
+    async pageClose(){
         await this.page.close();
     }
 }
-export {Index};
+export {Base};
 
