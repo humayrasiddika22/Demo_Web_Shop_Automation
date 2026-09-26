@@ -19,10 +19,12 @@ class Registration extends Base{
 
     }
 
+// Registration page
     async clickRegisterLink(){
         await this.registerLink.click();
     }
 
+// Registration info fillup
     async selectGender(){
         await this.gender.click();
     }
@@ -47,10 +49,12 @@ class Registration extends Base{
         await this.regCnfPass.fill(pass);
     }
 
+// Register
     async clickRegisterButton(){
         await this.registerButton.click();
     }
 
+// Registration confirm page
     async checkConfirmText(){
         await this.regiComplete.textContent();
     }
