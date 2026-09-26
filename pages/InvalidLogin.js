@@ -4,33 +4,37 @@ class InvalidLogin extends Base{
         super(page)
         this.page = page;
 
-        //Locators
-        this.loginLink = page.locator('a[href="/login"]');
-        this.loginEmail = page.locator('#Email');
-        this.loginPassword = page.locator('#Password');
-        this.loginButton = page.locator('input[value="Log in"]');
+// Locators
+        this.loginLinkIV = page.locator('a[href="/login"]');
+        this.loginEmailIV = page.locator('#Email');
+        this.loginPasswordIV = page.locator('#Password');
+        this.loginButtonIV = page.locator('input[value="Log in"]');
         this.invalidLoginText = page.locator('.validation-summary-errors');
 
     }
 
+// Login page
     async clickLoginLink(){
-        await this.loginLink.click();
+        await this.loginLinkIV.click();
     }
 
+// Login info fillup
     async fillLoginEmail(email){
-        await this.loginEmail.fill(email);
+        await this.loginEmailIV.fill(email);
     }
 
     async fillLoginPass(pass){
-        await this.loginPassword.fill(pass);
+        await this.loginPasswordIV.fill(pass);
     }
 
+// Log in
     async clickLoginButton(){
-        await this.loginButton.click();
+        await this.loginButtonIV.click();
     }
 
+// Login invalid message
     async invalidLoginError(){
-        await this.invalidLoginText.click();
+        await this.invalidLoginText.textContent();
     }
 
 }
