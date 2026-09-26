@@ -14,21 +14,21 @@ class InvalidLogin extends Base{
     }
 
 // Login page
-    async clickLoginLink(){
+    async clickLoginLinkIV(){
         await this.loginLinkIV.click();
     }
 
 // Login info fillup
-    async fillLoginEmail(email){
+    async fillLoginEmailIV(email){
         await this.loginEmailIV.fill(email);
     }
 
-    async fillLoginPass(pass){
+    async fillLoginPassIV(pass){
         await this.loginPasswordIV.fill(pass);
     }
 
 // Log in
-    async clickLoginButton(){
+    async clickLoginButtonIV(){
         await this.loginButtonIV.click();
     }
 
