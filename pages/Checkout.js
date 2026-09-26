@@ -23,7 +23,6 @@ class Checkout extends Search{
         this.paymentMethodContinue = page.locator('input[onclick="PaymentMethod.save()"]').first();
         this.paymentInfoContinue = page.locator('input[onclick="PaymentInfo.save()"]').first();
 
-        this.orderProductTotal = page.locator('span[class="product-subtotal"]');
         this.orderConfirmContinue = page.locator('input[onclick="ConfirmOrder.save()"]').first();
 
         this.orderDetails = page.locator('a[href*="/orderdetails/"]');
@@ -62,7 +61,6 @@ class Checkout extends Search{
 
 // Order comfirmation
     async orderConfirmCheck(){
-        await this.orderProductTotal.click();
         await this.orderConfirmContinue.click();
     }
 
