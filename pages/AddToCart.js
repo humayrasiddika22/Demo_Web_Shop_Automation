@@ -12,7 +12,7 @@ class AddToCart extends Login{
         this.addcartCG = page.locator('#add-to-cart-button-14').first();
 
         this.selectcartCG = page.locator('a[href="/cart"][class="ico-cart"]').first();
-        this.productName = page.locator('a[href="/black-white-diamond-heart"][class="product-name"]').first();
+        this.productName = page.getByText('Black & White Diamond Heart');
         this.productQuantity = page.locator('input.qty-input').first();
 
     }

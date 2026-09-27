@@ -4,6 +4,7 @@ import {Registration} from "../pages/Registration";
 test("Register a user account.", async ({page})=>{
 
     const pages = new Registration(page);
+    const randomEmail = `user${Date.now()}@example.com`;
 
 // Registration page opening
     await pages.pageOpen();
@@ -13,7 +14,7 @@ test("Register a user account.", async ({page})=>{
     await pages.selectGender();
     await pages.fillFirstName('SQA');
     await pages.fillLastName('Tester');
-    await pages.registerEmail('sqatesters@gmail.com'); // Registration with this email has already been completed
+    await pages.registerEmail(randomEmail); // Registration with this email has already been completed
     await pages.registerPassword('humayraSQA19');
     await pages.registerConfirmPassword('humayraSQA19');
 

@@ -25,10 +25,10 @@ test("Add product to shopping cart from category page and verify cart items.", a
 // Verify the product in the shopping cart
     await pages.verifyShoppingCartCG();
     await pages.verifyProduct('Black & White Diamond Heart', '1');
-    await page.pause();
+    //await page.pause();
 
 // Page closed
-    //await pages.pageClose();
+    await pages.pageClose();
     
 });
 //npx playwright test addToCart.test.js --headed
