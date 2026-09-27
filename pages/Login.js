@@ -41,4 +41,3 @@ class Login extends Base{
 }
 
 export {Login}
-
