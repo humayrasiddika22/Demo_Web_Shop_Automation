@@ -11,7 +11,7 @@ class Checkout extends Search{
         this.addcart = page.locator('#add-to-cart-button-28').first();
 
         this.selectcart = page.locator('span[class="cart-label"]').first();
-        this.agreeCheck = page.locator('#termsofservice');
+        this.agreeCheck = page.locator('input[name="termsofservice"]').first();
         this.checkOutButton = page.locator('#checkout').first();
 
         this.billingAddressContinue = page.locator('input[onclick="Billing.save()"]').first();
