@@ -30,5 +30,5 @@ test("Register a user account.", async ({page})=>{
     await pages.pageClose();
     
 });
-//npx playwright test registration.test.js --headed
+//npx playwright test q21_registration.test.js --headed
 

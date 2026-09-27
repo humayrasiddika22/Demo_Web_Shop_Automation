@@ -31,5 +31,5 @@ test("Add product to shopping cart from category page and verify cart items.", a
     await pages.pageClose();
     
 });
-//npx playwright test addToCart.test.js --headed
+//npx playwright test q23_addToCart.test.js --headed
 
