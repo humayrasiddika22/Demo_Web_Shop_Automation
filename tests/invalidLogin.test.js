@@ -1,7 +1,10 @@
 import {test, expect} from '@playwright/test';
 import {InvalidLogin} from "../pages/InvalidLogin";
+import {testData} from "../test-data/testData.js";
 
-test("An appropriate error message should be displayed and the user should not be allowed to log in.", async ({page})=>{
+for (let i = 0; i < testData.length; i++) {
+
+test(`An appropriate error message should be displayed and the user should not be allowed to log in. ${i+1}` , async ({page})=>{
 
     const pages = new InvalidLogin(page);
 
@@ -10,8 +13,8 @@ test("An appropriate error message should be displayed and the user should not b
     await pages.clickLoginLinkIV();
 
 // Login info fillup
-    await pages.fillLoginEmailIV('humayra@gmail.com');
-    await pages.fillLoginPassIV('humayraSQA19');
+    await pages.fillLoginEmailIV(testData[i].email);
+    await pages.fillLoginPassIV(testData[i].pass);
 
 // Log in
     await pages.clickLoginButtonIV();
@@ -24,5 +27,8 @@ test("An appropriate error message should be displayed and the user should not b
     await pages.pageClose();
     
 });
+}
+
+
 //npx playwright test invalidLogin.test.js --headed
 
