@@ -24,5 +24,5 @@ test("Login a user account.", async ({page})=>{
     await pages.pageClose();
     
 });
-//npx playwright test login.test.js --headed
+//npx playwright test q22_login.test.js --headed
 
