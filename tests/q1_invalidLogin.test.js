@@ -1,5 +1,5 @@
 import {test, expect} from '@playwright/test';
-import {InvalidLogin} from "../pages/InvalidLogin";
+import {InvalidLogin} from "../pages/InvalidLogin.js";
 import {testData} from "../test-data/testData.js";
 
 for (let i = 0; i < testData.length; i++) {
@@ -30,5 +30,5 @@ test(`An appropriate error message should be displayed and the user should not b
 }
 
 
-//npx playwright test invalidLogin.test.js --headed
+//npx playwright test q1_invalidLogin.test.js --headed
 
